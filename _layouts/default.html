@@ -1,28 +1,12 @@
 <!doctype html>
 <html>
-    
-    <head>
-        <meta charset = "utf-8">
-        <title>{{ page.title }}</title>
-        <link rel = "stylesheet" href = "/assets/css/styles.css">
-        {% feed_meta %}
-        {% seo %}
-        <!-- Only include google tracking when in productio -->
-        {% if jekyll.environment == "production" %}
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138051821-1">
-            </script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'UA-138051821-1');
-            </script>
-        {% endif %}
-    </head>
+    {% include head.html %}
         
     <body>
-        {% include navigation.html %}
-        {{ content }}  
+        <!-- Place in page container -->
+        <div>
+            {% include navigation.html %}
+            {{ content }} 
+        </div>
     </body>
 </html>
