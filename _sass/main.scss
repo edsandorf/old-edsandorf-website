@@ -1,3 +1,107 @@
-.current {
-    color: green;
+/*  Define global variables to be called with var() */
+:root {
+    --color-main: #153D99;
+    --color-darker: #082361;
+    --color-lighter: #4D6CB5;
+    --color-light: #BCCCF0;
+    --color-text: #000207;
+    --color-whiteish: #FEFEFE;
+    --color-blackish: #000207;
+    --color-link-hover: #808080;
+}
+
+/*  Set body to be a large flexbox  */
+body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  flex-direction: column;
+  margin: 10px;
+  padding: 0px;
+}
+
+body > * {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/*  SECTION BOX - FLEXBOX  */
+.section-box {
+  flex: 1 1;
+  max-width: 1440px;
+  min-width: 300px;
+  width: 80vw;
+  margin: 20px 20px;
+  padding: 0px;
+
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+/* Float navigation right */
+#navigationButtonRight{
+  float: right;
+}
+
+/*  Link icons footer */
+.link-icons-container {
+  margin: 10px 10px;
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
+
+/* Style the horizontal rule */
+
+hr {
+  display: block;
+  position: relative;
+  padding: 0px;
+  margin: 10px auto;
+  height: 0px;
+  width: 100%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 2px;
+  clear: both;
+  border: none;
+  border-top: 2px solid #aaaaaa;
+  border-bottom: 2px solid #ffffff;
+}
+
+
+
+#header-link{
+  color: --var(color-text);
+}
+
+
+.footer-header-divider{
+  
+}
+
+/* FONT AWESOME */
+.fab, .fas {
+  color: var(--color-text)
+}
+
+.fab:hover, .fas:hover {
+  color: var(--color-link-hover);
+  text-decoration: none;
+}
+
+.fa-bars {
+  color: var(--color-text)
+}
+
+#dropdownMenuButton {
+  background-color: white;
+  border-color: var(--color-text);
 }
