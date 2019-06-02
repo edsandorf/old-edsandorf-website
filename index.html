@@ -17,12 +17,18 @@ title: Professional website for Erlend Dancke Sandorf
   <div class = "row">
     <!-- News -->
     <div class = "col-sm">
-      
+      {% assign news = site.news.last %}
+      <h2><a href="{{ news.url }}">{{ news.title }}</a></h2>
+      <p>{{ news.excerpt }}</p>
     </div>
+    
     <!-- Blog -->
     <div class = "col-sm">
-      
+      {% assign post = site.posts.first %}
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
     </div>
+    
     <!-- Twitter -->
     <div class = "col-sm">
       
