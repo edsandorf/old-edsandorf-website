@@ -3,10 +3,15 @@
     {% include head.html %}
         
     <body>
-        <!-- Place in page container -->
-        <div>
-            {% include navigation.html %}
-            {{ content }} 
-        </div>
+        {% include header.html %}
+            
+            
+        {{ content }}     
+            
+            
+        {% include footer.html %}
+        
+        
+        {% include javascript.html %}
     </body>
 </html>
