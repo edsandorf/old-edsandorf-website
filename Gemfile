@@ -4,6 +4,10 @@ source "https://rubygems.org"
 
 gem 'jekyll'
 
+gem 'bootstrap', '~> 4.3.1'
+
+gem 'github-pages'
+
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'
