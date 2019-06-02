@@ -93,6 +93,20 @@ a:hover {
   text-decoration: none;
 }
 
+/* PROFILE PICTURE */
+.img-circle {
+  border-radius: 25%;
+}
+
+.avatar {
+  width: 300px;
+}
+
+/* THUMBNAILS FOR THE BLOGS */
+.thumbnails {
+  border-radius: 20%;
+  width: 100px;
+}
 
 /* FONT AWESOME */
 .fab, .fas {
