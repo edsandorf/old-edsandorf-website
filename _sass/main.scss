@@ -45,12 +45,18 @@ body > * {
 
 }
 
-/* Float navigation right */
+/*  NAVIGATION BUTTON */
 #navigationButtonRight{
   float: right;
 }
 
-/*  Link icons footer */
+#dropdownMenuButton {
+  background-color: white;
+  border-color: var(--color-text);
+}
+
+
+/*  LINK ICONS FOOTER */
 .link-icons-container {
   margin: 10px 10px;
   display: inline-block;
@@ -58,8 +64,7 @@ body > * {
   float: right;
 }
 
-/* Style the horizontal rule */
-
+/*  HORIZONTAL RULE */
 hr {
   display: block;
   position: relative;
@@ -77,15 +82,17 @@ hr {
 }
 
 
-
-#header-link{
-  color: --var(color-text);
+/*  LINK BEHAVIOR */
+a {
+  color: var(--color-text);
+  text-decoration: none;
 }
 
-
-.footer-header-divider{
-  
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: none;
 }
+
 
 /* FONT AWESOME */
 .fab, .fas {
@@ -101,7 +108,3 @@ hr {
   color: var(--color-text)
 }
 
-#dropdownMenuButton {
-  background-color: white;
-  border-color: var(--color-text);
-}
