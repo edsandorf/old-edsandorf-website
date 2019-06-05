@@ -1,5 +1,5 @@
 ---
-title: Teaching in Karlsruhe
+title: Taught Discrete Choice Analysis in R in Karsruhe
 author: Erlend
 ---
 
