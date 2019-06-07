@@ -1,5 +1,6 @@
 ---
 title: About me
+image: sandorf.jpg
 ---
 
 {% for author in site.authors %}
@@ -9,7 +10,7 @@ title: About me
     -->
   <div class = "row">
     <div class = "col-sm-4">
-      [IMAGE PLACEHOLDER]
+            <img class = "img-circle avatar" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
     </div>
     <div class = "col-sm-8">
       <p>
