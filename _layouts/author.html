@@ -5,17 +5,16 @@ layout: default
     <h1>{{ page.name }}</h1>
     <h2>{{ page.position }}</h2>
   -->
-
-  <div class = "row">
-    <div class = "col-sm-4">
-      <img class = "img-circle avatar" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
-    </div>
-    <div class = "col-sm-8">
-      <p>
-        {{ content }}
-      </p>
-    </div>
+  <div class = "container">
+    <img class = "rounded img-fluid img-thumbnail float-left img-size-500" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
+    
+    <p class = "text-justify">
+      {{ content }}
+    </p>
+    
+    
   </div>
+
 
 
 
