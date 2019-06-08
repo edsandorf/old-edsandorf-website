@@ -6,7 +6,7 @@ title: Professional website for Erlend Dancke Sandorf
 <div class = "container">
   
   <!-- Carousel -->
-  <div id = "carouselExampleCaptions" class = "carousel slide" data-ride = "carousel">
+  <div id = "carouselExampleCaptions" class = "carousel slide mt-4" data-ride = "carousel">
     <ol class = "carousel-indicators">
       <li data-target = "#carouselExampleCaptions" data-slide-to = "0" class = "active"></li>
       <li data-target = "#carouselExampleCaptions" data-slide-to = "1"></li>
@@ -42,10 +42,10 @@ title: Professional website for Erlend Dancke Sandorf
   </div> <!-- End carosel example captions -->
 
   <!-- Row of cards -->
-  <div class = "row top-buffer">
+  <div class = "row mt-4 mb-4">
     <!-- News -->
     <div class = "col-sm">
-      <div class = "card top-buffer">
+      <div class = "card mt-2">
         {% assign news = site.news.last %}
         <img src = "{{ site.baseurl }}/assets/img/{{ news.image }}" class = "card-img-top" alt = "...">
         <div class = "card-body">
@@ -57,7 +57,7 @@ title: Professional website for Erlend Dancke Sandorf
     </div>
   <!-- Blog -->
     <div class = "col-sm">
-      <div class = "card top-buffer">
+      <div class = "card mt-2">
         {% assign post = site.posts.first %}
         <img src = "{{ site.baseurl }}/assets/img/{{ post.image }}" class = "card-img-top" alt = "...">
         <div class = "card-body">
@@ -70,7 +70,7 @@ title: Professional website for Erlend Dancke Sandorf
     
     <!-- Twitter -->
     <div class = "col-sm">
-      <div class = "card top-buffer">
+      <div class = "card mt-2">
         <img src = "assets/img/placeholder.jpg" class = "card-img-top" alt = "...">
         <div class = "card-body">
           <h5 class = "card-title"><a href = "#">Gizmo</a></h5>
