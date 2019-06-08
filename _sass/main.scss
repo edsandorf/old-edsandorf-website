@@ -10,7 +10,8 @@
     --color-link-hover: #808080;
 }
 
-/*  Set body to be a large flexbox  */
+
+/*  Set body to be a large flexbox  
 body {
   display: -webkit-flex;
   display: flex;
@@ -29,9 +30,9 @@ body > * {
   font-size: 16px;
   color: var(--color-text);
   line-height: 1.5;
-}
+}*/
 
-/*  SECTION BOX - FLEXBOX  */
+/*  SECTION BOX - FLEXBOX  
 .section-box {
   flex: 1 1;
   max-width: 1440px;
@@ -43,6 +44,11 @@ body > * {
   display: flex;
   flex-flow: row wrap;
 
+}
+*/
+
+.top-buffer {
+  margin-top: 20px;
 }
 
 /*  NAVIGATION BUTTON */
@@ -58,7 +64,7 @@ body > * {
 
 /*  LINK ICONS FOOTER */
 .link-icons-container {
-  margin: 10px 10px;
+  margin: 0px 0px;
   display: inline-block;
   text-align: right;
   float: right;
@@ -93,28 +99,31 @@ a:hover {
   text-decoration: none;
 }
 
+/* FOOTER LINK BEHAVIOR */
+.footer-header-link a {
+  color: var(--color-link-hover);
+  text-decoration: none;
+}
+
+.footer-header-link a:hover {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+
 /* PROFILE PICTURE */
-.img-circle {
-  border-radius: 25%;
+.img-size-500 {
+  width: 500px;
 }
 
-.avatar {
-  width: 300px;
-}
-
-/* THUMBNAILS FOR THE BLOGS */
-.thumbnails {
-  border-radius: 20%;
-  width: 100px;
-}
 
 /* FONT AWESOME */
 .fab, .fas {
-  color: var(--color-text)
+  color: var(--color-link-hover);
 }
 
 .fab:hover, .fas:hover {
-  color: var(--color-link-hover);
+  color: var(--color-text);
   text-decoration: none;
 }
 
