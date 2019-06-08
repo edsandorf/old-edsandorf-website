@@ -1,6 +1,7 @@
 ---
 title: Taught Discrete Choice Analysis in R in Karsruhe
 author: Erlend
+image: karlsruhe.jpg
 ---
 
 I taught a course in Karlsruhe. It was very interesting. I think this is the blurb
