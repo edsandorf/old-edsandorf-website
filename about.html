@@ -8,14 +8,13 @@ image: sandorf.jpg
     <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
     <h3>{{ author.position }}</h3> 
     -->
-  <div class = "row">
-    <div class = "col-sm-4">
-            <img class = "img-circle avatar" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
-    </div>
-    <div class = "col-sm-8">
-      <p>
-        <p>{{ author.content | markdownify }}</p>
-      </p>
-    </div>
+  <div class = "container">
+    <img class = "rounded img-fluid img-thumbnail float-left img-size-500" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
+    
+    <p class = "text-justify">
+      {{ author.content | markdownify }}
+    </p>
+    
+    
   </div>
 {% endfor %}
