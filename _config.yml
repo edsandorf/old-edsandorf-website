@@ -17,6 +17,11 @@ defaults:
       layout: "post"
   - scope:
       path: ""
+      type: "news"
+    values:
+      layout: "news"
+  - scope:
+      path: ""
     values:
       layout: "default"
 
