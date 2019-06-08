@@ -1,32 +1,71 @@
 ---
 title: Professional website for Erlend Dancke Sandorf
 ---
+
+
 <div class = "container">
-  <!-- In this row I have an image and a text -->
-  <div class = "row">
-    <div class = "col-sm-4">
-      <img class = "img-circle avatar" alt = "Erlend Dancke Sandorf" src = "assets/img/sandorf.jpg">
-    </div>
-    <div class = "col-sm-8">
-      <p>
-        I am a Marie Sklodowska-Curie Research Fellow with the Economics Division at the Stirling Managment School. I hold a PhD in Environmental Economics from UiT - The Arctic University of Norway. My research interests lie in the areas of choice modeling and environmental economics. I specialize in the application of advanced discrete choice models in the context of environmental valuation.
-      </p>
-    </div>
-  </div>
-  <!-- In this row I will have columns showing news, blogs and twitter feeds -->
-  <div class = "row">
+  
+  <!-- Carousel -->
+  <div id = "carouselExampleCaptions" class = "carousel slide" data-ride = "carousel">
+    <ol class = "carousel-indicators">
+      <li data-target = "#carouselExampleCaptions" data-slide-to = "0" class = "active"></li>
+      <li data-target = "#carouselExampleCaptions" data-slide-to = "1"></li>
+      <li data-target = "#carouselExampleCaptions" data-slide-to = "2"></li>
+    </ol>
+    
+    <div class = "carousel-inner">
+      <!-- Slide 1 -->
+      <div class = "carousel-item active">
+        <img src = "assets/img/mykines.jpg" class = "d-block w-100" alt="...">
+        <div class = "carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class = "carousel-item">
+        <img src = "assets/img/mykines.jpg" class = "d-block w-100" alt = "...">
+        <div class = "carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class = "carousel-item">
+        <img src = "assets/img/mykines.jpg" class="d-block w-100" alt="...">
+        <div class = "carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div> <!-- End carosel-inner -->
+  </div> <!-- End carosel example captions -->
+
+  <!-- Row of cards -->
+  <div class = "row top-buffer">
     <!-- News -->
     <div class = "col-sm">
-      {% assign news = site.news.last %}
-      <h2><a href="{{ news.url }}">{{ news.title }}</a></h2>
-      <p>{{ news.excerpt }}</p>
+      <div class = "card top-buffer">
+        {% assign news = site.news.last %}
+        <img src = "{{ site.baseurl }}/assets/img/{{ news.image }}" class = "card-img-top" alt = "...">
+        <div class = "card-body">
+          <h5 class = "card-title"><a href = "{{ news.url }}">{{ news.title }}</a></h5>
+          <p class = "card-text">{{ news.excerpt }}</p>
+          <a href = "{{ news.url }}" class = "btn btn-info">Read more</a>
+        </div>
+      </div>
     </div>
-    
-    <!-- Blog -->
+  <!-- Blog -->
     <div class = "col-sm">
-      {% assign post = site.posts.first %}
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
+      <div class = "card top-buffer">
+        {% assign post = site.posts.first %}
+        <img src = "{{ site.baseurl }}/assets/img/{{ post.image }}" class = "card-img-top" alt = "...">
+        <div class = "card-body">
+          <h5 class = "card-title"><a href = "{{ post.url }}">{{ post.title }}</a></h5>
+          <p class = "card-text">{{ post.excerpt }}</p>
+          <a href = "{{ post.url }}" class = "btn btn-outline-info">Read more</a>
+        </div>
+      </div>
     </div>
     
     <!-- Twitter -->
