@@ -2,11 +2,11 @@
 title: Professional website for Erlend Dancke Sandorf
 ---
 
-
-<div class = "container">
+<div class = "jumbotron pb-0 pl-0 pt-0 pr-0 border-top border-bottom border-light">
   
+
   <!-- Carousel -->
-  <div id = "carouselExampleCaptions" class = "carousel slide mt-4" data-ride = "carousel">
+  <div id = "carouselExampleCaptions" class = "carousel slide" data-ride = "carousel">
     <ol class = "carousel-indicators">
       <li data-target = "#carouselExampleCaptions" data-slide-to = "0" class = "active"></li>
       <li data-target = "#carouselExampleCaptions" data-slide-to = "1"></li>
@@ -41,6 +41,9 @@ title: Professional website for Erlend Dancke Sandorf
     </div> <!-- End carosel-inner -->
   </div> <!-- End carosel example captions -->
 
+  </div>
+  
+<div class = "container">
   <!-- Row of cards -->
   <div class = "row mt-4 mb-4">
     <!-- News -->
@@ -63,7 +66,7 @@ title: Professional website for Erlend Dancke Sandorf
         <div class = "card-body">
           <h5 class = "card-title"><a href = "{{ post.url }}">{{ post.title }}</a></h5>
           <p class = "card-text">{{ post.excerpt }}</p>
-          <a href = "{{ post.url }}" class = "btn btn-outline-info">Read more</a>
+          <a href = "{{ post.url }}" class = "btn btn-info">Read more</a>
         </div>
       </div>
     </div>
@@ -75,7 +78,7 @@ title: Professional website for Erlend Dancke Sandorf
         <div class = "card-body">
           <h5 class = "card-title"><a href = "#">Gizmo</a></h5>
           <p class = "card-text">Gizmo is a collection of useful tools and tests for statistical analysis and choice modeling</p>
-          <a href = "#" class = "btn btn-outline-info">Read more</a>
+          <a href = "#" class = "btn btn-info">Read more</a>
         </div>
       </div>
     </div>  
