@@ -51,6 +51,16 @@ body > * {
   margin-top: 20px;
 }
 
+/*  SEARCH */
+#searchButton{
+  float:right;
+}
+
+#searchButton {
+  background-color: white;
+  border-color: var(--color-text);
+}
+
 /*  NAVIGATION BUTTON */
 #navigationButtonRight{
   float: right;
@@ -60,6 +70,8 @@ body > * {
   background-color: white;
   border-color: var(--color-text);
 }
+
+
 
 
 /*  LINK ICONS FOOTER */
