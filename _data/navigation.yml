@@ -6,3 +6,5 @@
   link: /news.html
 - name: About me
   link: /about.html
+- name: Search
+  link: /search.html

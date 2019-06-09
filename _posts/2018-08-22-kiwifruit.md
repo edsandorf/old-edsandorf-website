@@ -1,6 +1,8 @@
 ---
-author: Erlend
 title: Kiwi
+author: Erlend
+category: Fruit
+tags: green hairy seed
 image: placeholder.jpg
 ---
 
