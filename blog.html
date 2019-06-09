@@ -3,14 +3,25 @@ title: Blog
 ---
 
 <div class = "container">
-    <h1>Latest Posts</h1>
-    
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt }}</p>
-    </li>
+
+    {% assign loop_index = 0 %}
+    {% for post in site.posts %}                       
+        {% assign loop_index = loop_index | plus: 1 %}
+        {% assign row_finder = loop_index | modulo: 4 %}
+        {% if row_finder == 1 %}
+            <div class = "row mt-4">
+            {% include post_card.html %}
+        {% elsif rowfinder == 0 %}
+            {% include post_card.html %}
+            </div>
+        {% else %}
+            {% include post_card.html %}
+        {% endif %}
     {% endfor %}
-</ul>
+
+    <!-- To make sure that we close the div -->
+    {% if rowfinder != 0 %}
+        </div>
+    {% endif %}
+
 </div>
