@@ -47,31 +47,14 @@ title: Professional website for Erlend Dancke Sandorf
   <!-- Row of cards -->
   <div class = "row mt-4 mb-4">
     <!-- News -->
-    <div class = "col-sm">
-      <div class = "card mt-2">
-        {% assign news = site.news.last %}
-        <img src = "{{ site.baseurl }}/assets/img/{{ news.image }}" class = "card-img-top" alt = "...">
-        <div class = "card-body">
-          <h5 class = "card-title"><a href = "{{ news.url }}">{{ news.title }}</a></h5>
-          <p class = "card-text">{{ news.excerpt }}</p>
-          <a href = "{{ news.url }}" class = "btn btn-info">Read more</a>
-        </div>
-      </div>
-    </div>
-  <!-- Blog -->
-    <div class = "col-sm">
-      <div class = "card mt-2">
-        {% assign post = site.posts.first %}
-        <img src = "{{ site.baseurl }}/assets/img/{{ post.image }}" class = "card-img-top" alt = "...">
-        <div class = "card-body">
-          <h5 class = "card-title"><a href = "{{ post.url }}">{{ post.title }}</a></h5>
-          <p class = "card-text">{{ post.excerpt }}</p>
-          <a href = "{{ post.url }}" class = "btn btn-info">Read more</a>
-        </div>
-      </div>
-    </div>
+    {% assign news = site.news.last %}
+    {% include news_card.html %}
     
-    <!-- Twitter -->
+    <!-- Blog -->
+    {% assign post = site.posts.first %}
+    {% include post_card.html %}
+    
+    <!-- Other -->
     <div class = "col-sm">
       <div class = "card mt-2">
         <img src = "assets/img/placeholder.jpg" class = "card-img-top" alt = "...">
