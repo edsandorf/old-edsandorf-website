@@ -54,17 +54,9 @@ title: Professional website for Erlend Dancke Sandorf
     {% assign post = site.posts.first %}
     {% include post_card.html %}
     
-    <!-- Other -->
-    <div class = "col-sm">
-      <div class = "card mt-2">
-        <img src = "assets/img/placeholder.jpg" class = "card-img-top" alt = "...">
-        <div class = "card-body">
-          <h5 class = "card-title"><a href = "#">Gizmo</a></h5>
-          <p class = "card-text">Gizmo is a collection of useful tools and tests for statistical analysis and choice modeling</p>
-          <a href = "#" class = "btn btn-info">Read more</a>
-        </div>
-      </div>
-    </div>  
+    <!-- Pubs-->
+    {% assign pubs = site.pubs.last %}
+    {% include pubs_card.html %}
   </div>
 </div>
 
