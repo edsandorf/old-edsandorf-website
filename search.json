@@ -8,7 +8,34 @@ layout: null
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
-      "date"     : "{{ post.date }}"
+      "date"     : "{{ post.date }}",
+      "image"    : "{{ post.image }}"
+      
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %},
+  
+  {% for news in site.news %}
+    {
+      "title"    : "{{ news.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ news.url }}",
+      "category" : "{{ news.category }}",
+      "tags"     : "{{ news.tags | join: ', ' }}",
+      "date"     : "{{ news.date }}",
+      "image"    : "{{ news.image }}"
+      
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %},
+  
+  {% for pubs in site.pubs %}
+    {
+      "title"    : "{{ pubs.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ pubs.url }}",
+      "category" : "{{ pubs.category }}",
+      "tags"     : "{{ pubs.tags | join: ', ' }}",
+      "date"     : "{{ pubs.date }}",
+      "image"    : "{{ pubs.image }}"
       
     }
     {% unless forloop.last %},{% endunless %}
