@@ -1,7 +1,7 @@
 ---
 title: "Informing management strategies for a reserve: Results from a discrete choice experiment survey"
 author: Erlend
-category: publication
+category: journal article
 tags: ecosystem services vietnam MPA marine protected areas non market valuation
 image: 2017-05-18-ocean-and-coastal.jpg
 ---
