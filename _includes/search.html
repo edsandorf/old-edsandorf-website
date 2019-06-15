@@ -30,11 +30,12 @@
 <!-- Script pointing to search-script.js -->
 <script src = "/assets/js/jekyll-search.js" type = "text/javascript"></script>
 
+<!-- The configuration script -->
 <script>
   SimpleJekyllSearch({
+    searchResultTemplate: '<div class = "container"><div class = "row mt-4"><div class = "col-sm-4"><img class = "rounded img-fluid img-thumbnail float-left img-search" src = {image}></div><div class = "col-sm-8"><a href = "{url}"><h4>{title}</h4></a><span>Published: {date}</span></div></div></div>',
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    searchResultsTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
     json: '/search.json'
   })
 </script>

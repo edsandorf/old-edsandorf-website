@@ -8,8 +8,8 @@ layout: null
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
-      "date"     : "{{ post.date }}",
-      "image"    : "{{ post.image }}"
+      "date"     : "{{ post.date | date_to_string }}",
+      "image"    : "{{ site.baseurl }}/assets/img/{{ post.image }}"
       
     }
     {% unless forloop.last %},{% endunless %}
@@ -21,8 +21,8 @@ layout: null
       "url"      : "{{ site.baseurl }}{{ news.url }}",
       "category" : "{{ news.category }}",
       "tags"     : "{{ news.tags | join: ', ' }}",
-      "date"     : "{{ news.date }}",
-      "image"    : "{{ news.image }}"
+      "date"     : "{{ news.date | date_to_string }}",
+      "image"    : "{{ site.baseurl }}/assets/img/{{ news.image }}"
       
     }
     {% unless forloop.last %},{% endunless %}
@@ -34,8 +34,8 @@ layout: null
       "url"      : "{{ site.baseurl }}{{ pubs.url }}",
       "category" : "{{ pubs.category }}",
       "tags"     : "{{ pubs.tags | join: ', ' }}",
-      "date"     : "{{ pubs.date }}",
-      "image"    : "{{ pubs.image }}"
+      "date"     : "{{ pubs.date | date_to_string }}",
+      "image"    : "{{ site.baseurl }}/assets/img/{{ pubs.image }}"
       
     }
     {% unless forloop.last %},{% endunless %}
