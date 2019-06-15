@@ -5,17 +5,18 @@ title: News
 <div class = "container">
 
     {% assign loop_index = 0 %}
-    {% for news in site.news %}                       
+    {% for news in site.news %}         
+        {% assign card = news %}
         {% assign loop_index = loop_index | plus: 1 %}
         {% assign row_finder = loop_index | modulo: 4 %}
         {% if row_finder == 1 %}
             <div class = "row mt-4">
-            {% include news_card.html %}
+            {% include card.html %}
         {% elsif rowfinder == 0 %}
-            {% include news_card.html %}
+            {% include card.html %}
             </div>
         {% else %}
-            {% include news_card.html %}
+            {% include card.html %}
         {% endif %}
     {% endfor %}
 

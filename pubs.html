@@ -5,17 +5,18 @@ title: Publications
 <div class = "container">
 
     {% assign loop_index = 0 %}
-    {% for pubs in site.pubs %}                       
+    {% for pubs in site.pubs %} 
+        {% assign card = pubs %}
         {% assign loop_index = loop_index | plus: 1 %}
         {% assign row_finder = loop_index | modulo: 4 %}
         {% if row_finder == 1 %}
             <div class = "row mt-4">
-            {% include pubs_card.html %}
+            {% include card.html %}
         {% elsif rowfinder == 0 %}
-            {% include pubs_card.html %}
+            {% include card.html %}
             </div>
         {% else %}
-            {% include pubs_card.html %}
+            {% include card.html %}
         {% endif %}
     {% endfor %}
 

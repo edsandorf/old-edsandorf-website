@@ -16,17 +16,17 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "pubs-post-news"
   - scope:
       path: ""
       type: "news"
     values:
-      layout: "news"
+      layout: "pubs-post-news"
   - scope:
       path: ""
       type: "pubs"
     values:
-      layout: "pubs"
+      layout: "pubs-post-news"
   - scope:
       path: ""
     values:

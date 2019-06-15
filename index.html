@@ -47,16 +47,16 @@ title: Professional website for Erlend Dancke Sandorf
   <!-- Row of cards -->
   <div class = "row mt-4 mb-4">
     <!-- News -->
-    {% assign news = site.news.last %}
-    {% include news_card.html %}
+    {% assign card = site.news.last %}
+    {% include card.html %}
     
     <!-- Blog -->
-    {% assign post = site.posts.first %}
-    {% include post_card.html %}
+    {% assign card = site.posts.first %}
+    {% include card.html %}
     
     <!-- Pubs-->
-    {% assign pubs = site.pubs.last %}
-    {% include pubs_card.html %}
+    {% assign card = site.pubs.last %}
+    {% include card.html %}
   </div>
 </div>
 
