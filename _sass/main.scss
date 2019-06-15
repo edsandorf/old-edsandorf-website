@@ -74,7 +74,27 @@ body > * {
 }
 
 
+/*  CHANGING BEHAVIOR OF MODALL */
+.modal-backdrop {
+  position:unset !important;
+}
 
+/* ADDING BORDER THICKNESS CLASSES */
+.border-1 {
+    border-width:1px !important;
+}
+
+.border-2 {
+    border-width:2px !important;
+}
+
+.border-3 {
+    border-width:3px !important;
+}
+
+.border-4 {
+    border-width:4px !important;
+}
 
 /*  LINK ICONS FOOTER */
 .link-icons-container {
