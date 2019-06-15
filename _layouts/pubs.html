@@ -3,7 +3,7 @@ layout: default
 ---
 
   <div class = "container">
-    <div class = "row">
+    <div class = "row mt-4">
       <div class = "col-sm-12">
         <h1> {{ page.title }} </h1> <br>
         <p>
@@ -15,8 +15,12 @@ layout: default
         </p>
       </div>
     </div>
+    
+    <div class = "row">
+      <img class = "img-fluid img-max-400 d-block mx-auto float-left mb-3" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
+    </div>  
       
-      <img class = "rounded img-fluid img-thumbnail float-left img-size-500" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
+      
 
       <p>
         {{ content }}
