@@ -13,9 +13,27 @@
 .min-height-250 {
   min-height: 250px !important;
 }
+
+/* INFORMATION TABLE */
+.project-info {
+  float: right;
+  border: 1px solid var(--color-link-hover);
+  padding: 5px;
+}
+
+.project-info table {
+  width: 450px;
+}
+
+.project-info tr {
+
+}
+
+.project-info tr td:first-child {
+  width: 125px;
+}
+
 /* CAROUSEL POSITIONS */
-
-
 .carousel-position-left {
   top: 10px;
   bottom: auto;

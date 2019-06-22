@@ -4,6 +4,12 @@ author: Erlend
 category: projects
 tags: preferences sustainable aquaculture Vietnam consumer producer policy
 image: shrimp-aquaculture.jpg
+acronym: N/A
+funder: NAFOSTED No. 502.99-2018.25
+funding: USD 28 000 (EUR 24 500)
+period: 2018 - 2020
+role: Co investigator
+website: #
 ---
 
 In the period 2000 – 2015, Vietnam saw a formidable growth in shrimp aquaculture and in 2016 it was one of the largest producers of shrimp in the world exporting to 90 different markets and generating more than 2.9 billion US dollars in export revenue.
