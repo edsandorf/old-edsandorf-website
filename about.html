@@ -1,19 +1,17 @@
 ---
 title: About me
-image: sandorf.jpg
 ---
 
 {% for author in site.authors %}
-  <!-- 
-    <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
-    <h3>{{ author.position }}</h3> 
-    -->
   <div class = "container">
-    <img class = "rounded img-fluid img-thumbnail float-left img-size-500" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
+    
+    <img class = "rounded img-fluid img-thumbnail float-left img-size-500" src = "{{ site.baseurl }}/assets/img/{{ author.image }}">
     
     <p class = "text-justify">
       {{ author.content | markdownify }}
     </p>
+    
+    <a href = "{{ site.baseurl }}/assets/doc/{{ author.cv}}" class = "btn btn-info"><i class = "fa fa-download"></i> Download CV</a>
     
     
   </div>
