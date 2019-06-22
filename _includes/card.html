@@ -3,6 +3,7 @@
     <img src = "{{ site.baseurl }}/assets/img/{{ card.image }}" class = "card-img-top" alt = "...">
     <div class = "card-body">
       <h5 class = "card-title"><a href = "{{ card.url }}">{{ card.title }}</a></h5>
+      <p class = "card-text">Published: {{ card.date | date_to_string }}</p>
       <p class = "card-text">{{ card.excerpt }}</p>
     </div>
     <div class = "card-footer bg-white border-0"><a href = "{{ card.url }}" class = "btn btn-info">Read more</a></div>
