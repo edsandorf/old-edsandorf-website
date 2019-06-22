@@ -10,6 +10,38 @@
     --color-link-hover: #808080;
 }
 
+.min-height-250 {
+  min-height: 250px !important;
+}
+/* CAROUSEL POSITIONS */
+
+
+.carousel-position-left {
+  top: 10px;
+  bottom: auto;
+  left: 10px;
+  right: auto;
+  text-align: left;
+  max-width: 400px;
+}
+
+.carousel-position-center {
+  top: 10px;
+  bottom: auto;
+}
+
+.carousel-position-right {
+  top: 10px;
+  bottom: auto;
+  left: auto;
+  right: 10px;
+  text-align: left;
+  max-width: 400px;
+}
+
+.carousel-card {
+  bacground-color: transparent;
+}
 
 /* IMAGE SIZES POSTS */
 .img-max-400 {
