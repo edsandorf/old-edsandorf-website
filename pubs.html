@@ -5,7 +5,7 @@ title: Publications
 <div class = "container">
 
     {% assign loop_index = 0 %}
-    {% for pubs in site.pubs %} 
+    {% for pubs in site.pubs reversed %} 
         {% assign card = pubs %}
         {% assign loop_index = loop_index | plus: 1 %}
         {% assign row_finder = loop_index | modulo: 4 %}

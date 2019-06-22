@@ -5,7 +5,7 @@ title: News
 <div class = "container">
 
     {% assign loop_index = 0 %}
-    {% for news in site.news %}         
+    {% for news in site.news reversed %}         
         {% assign card = news %}
         {% assign loop_index = loop_index | plus: 1 %}
         {% assign row_finder = loop_index | modulo: 4 %}
