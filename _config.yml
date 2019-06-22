@@ -33,7 +33,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "pubs-post-news"      
+      layout: "project"      
   - scope:
       path: ""
     values:
