@@ -17,6 +17,9 @@
 /* INFORMATION TABLE */
 .project-info {
   float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
   border: 1px solid var(--color-link-hover);
   padding: 5px;
 }
@@ -64,7 +67,7 @@
 /* IMAGE SIZES POSTS */
 .img-max-400 {
   max-height: 400px;
-  width: 100%;
+  width: calc(100% - 30px);
 }
 
 /*  SEARCH */
