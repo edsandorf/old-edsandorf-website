@@ -18,12 +18,12 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "pubs-post-news"
+      layout: "post-news"
   - scope:
       path: ""
       type: "news"
     values:
-      layout: "pubs-post-news"
+      layout: "post-news"
   - scope:
       path: ""
       type: "pubs"
