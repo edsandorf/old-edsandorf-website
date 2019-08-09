@@ -16,10 +16,10 @@
 
 /* INFORMATION TABLE */
 .project-info {
-  float: right;
+  float: left;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-right: 20px;
   border: 1px solid var(--color-link-hover);
   padding: 5px;
 }
@@ -65,14 +65,23 @@
 }
 
 /* IMAGE SIZES POSTS */
-.img-max-400 {
-  max-height: 400px;
-  width: calc(100% - 30px);
+.img-project {
+  width: 600px;
 }
 
 
 .img-w-50 {
   width: calc(50% - 30px);
+}
+
+.card-img-custom {
+  width: 100%;
+  height: calc(width * 1.25);
+}
+
+.img-pubs {
+  max-height: calc(width * 1.25);
+  width: 400px;
 }
 
 /*  SEARCH */
@@ -87,7 +96,7 @@
 
 .img-search {
   width: 200px;
-  height: 112.5px;
+  height: 250px;
 }
 
 

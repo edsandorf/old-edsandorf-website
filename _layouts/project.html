@@ -16,12 +16,21 @@ layout: default
       </div>
     </div>
     
-    <div class = "row">
-      <img class = "img-fluid img-max-400 d-block mx-auto mb-3" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
-    </div>  
-      
-      <div class = "project-info">
-        <table>
+    <div class = "row mt-4">
+      <div class = "col-sm-12">
+              <img class = "img-fluid float-left img-project mt-3 mb-1 mr-3" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
+              
+      <p class = "text-justify">
+        {{ content }}
+      </p>
+
+      </div>
+    </div> 
+    
+    <div class = "row mt-4">
+      <div class = "col-sm-12">
+        <div class = "project-info">
+          <table>
           <!-- Row -->
           <tr>
             <td>
@@ -78,13 +87,8 @@ layout: default
           </tr>          
         </table>
       </div>
-      
-      <p class = "text-justify">
-        {{ content }}
-      </p>
-    
-
-    
+      </div>
+    </div>
   </div>
 
 
