@@ -2,11 +2,15 @@
 layout: default
 ---
   <div class = "container">
-    <img class = "rounded img-fluid img-thumbnail float-left img-size-500" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
+    <div class = "row mt-4">
+      <div class = "col-sm-12">
+        <img class = "rounded img-fluid img-thumbnail float-left img-size-500" src = "{{ site.baseurl }}/assets/img/{{ page.image }}">
     
-    <p class = "text-justify">
-      {{ content }}
-    </p>
+        <p class = "text-justify">
+          {{ content }}
+        </p>
     
-    <a href = "{{ site.baseurl }}/assets/doc/{{ page.cv}}" class = "btn btn-info"><i class = "fa fa-download"></i> Download CV</a>
+        <a href = "{{ site.baseurl }}/assets/doc/{{ page.cv}}" class = "btn btn-info"><i class = "fa fa-download"></i> Download CV</a>
+      </div>
+    </div>
   </div>
