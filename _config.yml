@@ -28,7 +28,7 @@ defaults:
       path: ""
       type: "pubs"
     values:
-      layout: "pubs-post-news"
+      layout: "pubs"
   - scope:
       path: ""
       type: "projects"
