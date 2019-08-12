@@ -4,11 +4,10 @@ author: Erlend
 category: journal article
 tags: ecosystem services vietnam MPA marine protected areas non market valuation
 image: ocean-and-coastal-management.jpg
+excerpt: It is well-known that operating within the boundaries of a national park provides commercial actors with the opportunity to charge a price premium, though this has to a lesser degree been demonstrated for marine protected areas. 
 ---
 
-It is well-known that operating within the boundaries of a national park provides commercial actors with the opportunity to charge a price premium, though this has to a lesser degree been demonstrated for marine protected areas. 
-
-We estimate national tourists' willingness-to-pay a price premium for boat trips
+It is well-known that operating within the boundaries of a national park provides commercial actors with the opportunity to charge a price premium, though this has to a lesser degree been demonstrated for marine protected areas. We estimate national tourists' willingness-to-pay a price premium for boat trips
 in the Nha Trang Bay Marine Protected Are, Vietnam, using a discrete choice experiment. Our results
 show that tourists are willing to pay an average price premium of 18 USD per trip for a large
 improvement in environmental quality, and that avoiding the loss of jobs for local fishermen is of minor
