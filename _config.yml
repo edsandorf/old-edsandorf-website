@@ -1,47 +1,15 @@
-collections:
-  authors:
-    output: true
-  news:
-    output: true
-  pubs:
-    output: true
-  projects:
-    output: true
+remote_theme: edsandorf/jekyll-pro-theme
 
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post-news"
-  - scope:
-      path: ""
-      type: "news"
-    values:
-      layout: "post-news"
-  - scope:
-      path: ""
-      type: "pubs"
-    values:
-      layout: "pubs"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"      
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+google_analytics: UA-154953740-01
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  
-permalink: /blog/:year/:month/:day/:title
+show_navigation: true
+show_search_bar: true
+show_downloads: false
+to_the_top: true
+
+creator: Erlend Dancke Sandorf
+
+e_mail: e.d.sandorf@stir.ac.uk
+github_handle: edsandorf
+linkedin_handle: erlend-dancke-Sandorf
+twitter_handle: edsandorf

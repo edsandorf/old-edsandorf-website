@@ -1,56 +1,18 @@
 ---
 layout: null
 ---
+{% assign default-img-url = "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true" %}
+
 [
   {% for post in site.posts %}
     {
       "title"    : "{{ post.title | escape }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "author"   : "{{ post.author }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
-      "date"     : "{{ post.date | date_to_string }}",
-      "image"    : "{{ site.baseurl }}/assets/img/{{ post.image }}"
-      
-    }
-    {% unless forloop.last %},{% endunless %}
-  {% endfor %},
-  
-  {% for news in site.news %}
-    {
-      "title"    : "{{ news.title | escape }}",
-      "url"      : "{{ site.baseurl }}{{ news.url }}",
-      "category" : "{{ news.category }}",
-      "tags"     : "{{ news.tags | join: ', ' }}",
-      "date"     : "{{ news.date | date_to_string }}",
-      "image"    : "{{ site.baseurl }}/assets/img/{{ news.image }}"
-      
-    }
-    {% unless forloop.last %},{% endunless %}
-  {% endfor %},
-  
-  {% for pubs in site.pubs %}
-    {
-      "title"    : "{{ pubs.title | escape }}",
-      "url"      : "{{ site.baseurl }}{{ pubs.url }}",
-      "category" : "{{ pubs.category }}",
-      "tags"     : "{{ pubs.tags | join: ', ' }}",
-      "date"     : "{{ pubs.date | date_to_string }}",
-      "image"    : "{{ site.baseurl }}/assets/img/{{ pubs.image }}"
-      
-    }
-    {% unless forloop.last %},{% endunless %}
-  {% endfor %},
-  
-  {% for projects in site.projects %}
-    {
-      "title"    : "{{ projects.title | escape }}",
-      "url"      : "{{ site.baseurl }}{{ projects.url }}",
-      "category" : "{{ projects.category }}",
-      "tags"     : "{{ projects.tags | join: ', ' }}",
-      "date"     : "{{ projects.date | date_to_string }}",
-      "image"    : "{{ site.baseurl }}/assets/img/{{ projects.image }}"
-      
-    }
-    {% unless forloop.last %},{% endunless %}
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | date_to_long_string }}",
+      "image"    : "{{ site.baseurl }}{% if post.image %}{{ post.image }}{% else %}{{default-img-url}}{% endif %}"
+    } {% unless forloop.last %}, {% endunless %}
   {% endfor %}
 ]
